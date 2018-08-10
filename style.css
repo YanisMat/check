@@ -103,17 +103,11 @@ input[type=search] {
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
 	-webkit-appearance: none
 }
-fieldset {
-	border: 1px solid silver;
-	margin: 0 2px;
-	padding: .35em .625em .75em
-}
+
 textarea {
 	overflow: auto
 }
-optgroup {
-	font-weight: 700
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0
@@ -132,19 +126,7 @@ td, th {
 	a[href^="#"]:after, a[href^="javascript:"]:after {
 		content: ""
 	}
-	blockquote, pre {
-		border: 1px solid #999;
-		page-break-inside: avoid
-	}
-	thead {
-		display: table-header-group
-	}
-	img, tr {
-		page-break-inside: avoid
-	}
-	img {
-		max-width: 100%!important
-	}
+
 	h2, h3, p {
 		orphans: 3;
 		widows: 3
@@ -152,29 +134,7 @@ td, th {
 	h2, h3 {
 		page-break-after: avoid
 	}
-	.navbar {
-		display: none
-	}
-	.btn>.caret, .dropup>.btn>.caret {
-		border-top-color: #fff!important
-	}
-	.label {
-		border: 1px solid #fff
-	}
-	.table {
-		border-collapse: collapse!important
-	}
-	.table td, .table th {
-		background-color: #fff!important
-	}
-	.table-bordered td, .table-bordered th {
-		border: 1px solid #ddd!important
-	}
-}
-:after, :before {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box
-}
+
 html {
 	font-size: 10px;
 	-webkit-tap-highlight-color: transparent
@@ -204,65 +164,14 @@ a:focus {
 	outline: 5px auto -webkit-focus-ring-color;
 	outline-offset: -2px
 }
-figure {
-	margin: 0
-}
-img {
-	vertical-align: middle
-}
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto
-}
-.img-rounded {
-	-webkit-border-radius: 9px;
-	border-radius: 9px
-}
-.img-thumbnail {
-	padding: 4px;
-	line-height: 1.428571429;
-	background-color: #fff;
-	border: 1px solid #ddd;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	display: inline-block;
-	max-width: 100%;
-	height: auto
-}
-.img-circle {
-	-webkit-border-radius: 50%;
-	border-radius: 50%
-}
+
 hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 0;
 	border-top: 1px solid #eee
 }
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0
-}
-.sr-only-focusable:active, .sr-only-focusable:focus {
-	position: static;
-	width: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	clip: auto
-}
-[role=button] {
-	cursor: pointer
-}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-family:  TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
 	font-weight: 300;
@@ -314,24 +223,6 @@ hr {
 p {
 	margin: 0 0 10px
 }
-.lead {
-	margin-bottom: 20px;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.4
-}
-@media (min-width:768px) {
-	.lead {
-		font-size: 21px
-	}
-}
-.small, small {
-	font-size: 78%
-}
-.mark, mark {
-	background-color: #fcf8e3;
-	padding: .2em
-}
 
 .page-header {
 	padding-bottom: 9px;
@@ -344,86 +235,7 @@ ol, ul {
 ol ol, ol ul, ul ol, ul ul {
 	margin-bottom: 0
 }
-.list-inline, .list-unstyled {
-	padding-left: 0;
-	list-style: none
-}
-.list-inline {
-	margin-left: -5px
-}
-.list-inline>li {
-	display: inline-block;
-	padding-left: 5px;
-	padding-right: 5px
-}
-dl {
-	margin-top: 0;
-	margin-bottom: 20px
-}
-dd, dt {
-	line-height: 1.428571429
-}
-dt {
-	font-weight: 700
-}
-dd {
-	margin-left: 0
-}
-.dl-horizontal dd:after, .dl-horizontal dd:before {
-	content: " ";
-	display: table
-}
-.dl-horizontal dd:after {
-	clear: both
-}
-@media (min-width:768px) {
-	.dl-horizontal dt {
-		float: left;
-		width: 160px;
-		clear: left;
-		text-align: right;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap
-	}
-	.dl-horizontal dd {
-		margin-left: 180px
-	}
-}
-.initialism {
-	font-size: 90%
-}
-blockquote {
-	padding: 10px 20px;
-	margin: 0 0 20px;
-	font-size: 17.5px;
-	border-left: 5px solid #ccc
-}
-blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child {
-	margin-bottom: 0
-}
-blockquote .small, blockquote footer, blockquote small {
-	display: block;
-	font-size: 80%;
-	line-height: 1.428571429;
-	color: #777
-}
-blockquote .small:before, blockquote footer:before, blockquote small:before {
-	content: "\2014   \A0"
-}
-.blockquote-reverse, blockquote.pull-right {
-	padding-right: 15px;
-	padding-left: 0;
-	border-right: 5px solid #ccc;
-	border-left: 0;
-	text-align: right
-}
-.blockquote-reverse .small:before, .blockquote-reverse footer:before, .blockquote-reverse small:before, blockquote.pull-right .small:before, blockquote.pull-right footer:before, blockquote.pull-right small:before {
-	content: ""
-}
-.blockquote-reverse .small:after, .blockquote-reverse footer:after, .blockquote-reverse small:after, blockquote.pull-right .small:after, blockquote.pull-right footer:after, blockquote.pull-right small:after {
-	content: "\A0   \2014"
-}
+
 address {
 	margin-bottom: 20px;
 	font-style: normal;
@@ -518,12 +330,7 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
 	margin-left: auto;
 	margin-right: auto
 }
-.pull-right {
-	float: right!important
-}
-.pull-left {
-	float: left!important
-}
+
 .hide {
 	display: none!important
 }
@@ -543,193 +350,12 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
 .hidden {
 	display: none!important
 }
-.affix {
-	position: fixed
-}
+
 @-ms-viewport {
 	width: device-width
 }
-.visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
-	display: none!important
-}
-@media (max-width:767px) {
-	.visible-xs {
-		display: block!important
-	}
-	table.visible-xs {
-		display: table!important
-	}
-	tr.visible-xs {
-		display: table-row!important
-	}
-	td.visible-xs, th.visible-xs {
-		display: table-cell!important
-	}
-}
-@media (max-width:767px) {
-	.visible-xs-block {
-		display: block!important
-	}
-}
-@media (max-width:767px) {
-	.visible-xs-inline {
-		display: inline!important
-	}
-}
-@media (max-width:767px) {
-	.visible-xs-inline-block {
-		display: inline-block!important
-	}
-}
-@media (min-width:768px) and (max-width:991px) {
-	.visible-sm {
-		display: block!important
-	}
-	table.visible-sm {
-		display: table!important
-	}
-	tr.visible-sm {
-		display: table-row!important
-	}
-	td.visible-sm, th.visible-sm {
-		display: table-cell!important
-	}
-}
-@media (min-width:768px) and (max-width:991px) {
-	.visible-sm-block {
-		display: block!important
-	}
-}
-@media (min-width:768px) and (max-width:991px) {
-	.visible-sm-inline {
-		display: inline!important
-	}
-}
-@media (min-width:768px) and (max-width:991px) {
-	.visible-sm-inline-block {
-		display: inline-block!important
-	}
-}
-@media (min-width:992px) and (max-width:1199px) {
-	.visible-md {
-		display: block!important
-	}
-	table.visible-md {
-		display: table!important
-	}
-	tr.visible-md {
-		display: table-row!important
-	}
-	td.visible-md, th.visible-md {
-		display: table-cell!important
-	}
-}
-@media (min-width:992px) and (max-width:1199px) {
-	.visible-md-block {
-		display: block!important
-	}
-}
-@media (min-width:992px) and (max-width:1199px) {
-	.visible-md-inline {
-		display: inline!important
-	}
-}
-@media (min-width:992px) and (max-width:1199px) {
-	.visible-md-inline-block {
-		display: inline-block!important
-	}
-}
-@media (min-width:1200px) {
-	.visible-lg {
-		display: block!important
-	}
-	table.visible-lg {
-		display: table!important
-	}
-	tr.visible-lg {
-		display: table-row!important
-	}
-	td.visible-lg, th.visible-lg {
-		display: table-cell!important
-	}
-}
-@media (min-width:1200px) {
-	.visible-lg-block {
-		display: block!important
-	}
-}
-@media (min-width:1200px) {
-	.visible-lg-inline {
-		display: inline!important
-	}
-}
-@media (min-width:1200px) {
-	.visible-lg-inline-block {
-		display: inline-block!important
-	}
-}
-@media (max-width:767px) {
-	.hidden-xs {
-		display: none!important
-	}
-}
-@media (min-width:768px) and (max-width:991px) {
-	.hidden-sm {
-		display: none!important
-	}
-}
-@media (min-width:992px) and (max-width:1199px) {
-	.hidden-md {
-		display: none!important
-	}
-}
-@media (min-width:1200px) {
-	.hidden-lg {
-		display: none!important
-	}
-}
-.visible-print {
-	display: none!important
-}
-@media print {
-	.visible-print {
-		display: block!important
-	}
-	table.visible-print {
-		display: table!important
-	}
-	tr.visible-print {
-		display: table-row!important
-	}
-	td.visible-print, th.visible-print {
-		display: table-cell!important
-	}
-}
-.visible-print-block {
-	display: none!important
-}
-@media print {
-	.visible-print-block {
-		display: block!important
-	}
-}
-.visible-print-inline {
-	display: none!important
-}
-@media print {
-	.visible-print-inline {
-		display: inline!important
-	}
-}
-.visible-print-inline-block {
-	display: none!important
-}
-@media print {
-	.visible-print-inline-block {
-		display: inline-block!important
-	}
-}
 
+/* При нажатии строки приобретают прозрачность */
 .resume-renderer {
 	width: 760px;
 	line-height: normal
@@ -825,20 +451,7 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
 .resume-renderer .moveable-items .item-object {
 	cursor: move
 }
-.resume-renderer .dragged-section .popover-wrap {
-	display: none
-}
-.resume-renderer .dragged-section .selected-resume-item {
-	background: none;
-	-webkit-transition: none;
-	transition: none
-}
-.resume-renderer .dragged-section .draggable-hover {
-	background: #000!important;
-	opacity: .3;
-	-webkit-border-radius: 5px;
-	border-radius: 5px
-}
+
 .resume-renderer .dragged-section .draggable-hover>div {
 	opacity: 0
 }
@@ -955,171 +568,9 @@ input[type=checkbox]:focus, input[type=file]:focus, input[type=radio]:focus {
 .resume-no-hover .item-object, .resume-no-hover .resume-header, .resume-no-hover .resume-section-container {
 	background: transparent!important
 }
-.item-no-popover .popover-container {
-	display: none
-}
-.resume-layout-condensed .resume-section .moveable-items {
-	top: 0
-}
-.resume-layout-condensed .resume-section .resume-section-text {
-	font-size: 11px;
-	line-height: 11px;
-	font-weight: 400;
-	color: #65696d
-}
-.resume-layout-condensed .resume-item-holder .item-object {
-	padding: 6px 15px 0
-}
-.resume-layout-condensed .resume-item-holder .item-object>.inner {
-	padding-bottom: 6px;
-	top: 0
-}
-.resume-layout-newcondensed .resume-section .moveable-items {
-	top: 0
-}
-.resume-layout-newcondensed .resume-section .resume-section-container {
-	margin-bottom: 8px
-}
-.resume-layout-newcondensed .resume-section .resume-section-text {
-	color: #000;
-	font-size: 14px;
-	font-weight: 400;
-	letter-spacing: 4px;
-	line-height: 17px;
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::-webkit-input-placeholder {
-	color: #000!important
-}
-.resume-layout-newcondensed .resume-section .resume-section-text:-ms-input-placeholder, .resume-layout-newcondensed .resume-section .resume-section-text::-ms-input-placeholder {
-	color: #000!important
-}
-.resume-layout-newcondensed .resume-section .resume-section-text::placeholder {
-	color: #000!important
-}
-.resume-layout-newcondensed .resume-item-holder .item-object {
-	padding: 8px 15px 6px
-}
-.resume-layout-newcondensed .resume-item-holder .item-object>.inner {
-	padding-bottom: 0;
-	top: 0
-}
-.resume-item-icon.onboarding-focus-point:after {
-	margin-top: -5px
-}
-#resume-null.is-placeholder .resume-section .education-item-gpa, #resume-null.is-placeholder .resume-section .inner {
-	border-color: transparent
-}
-#resume-null.is-placeholder .resume-section .slider-component-dot {
-	background-color: transparent!important
-}
-#resume-null.is-placeholder .resume-section .bullet-dot, #resume-null.is-placeholder .resume-section .editable-field, #resume-null.is-placeholder .resume-section .editable-field::-webkit-input-placeholder, #resume-null.is-placeholder .resume-section .education-item-gpa .separator, #resume-null.is-placeholder .resume-section .resume-item-icon i, #resume-null.is-placeholder .resume-section .with-icon i, #resume-null.is-placeholder .resume-section .with-icon span {
-	color: transparent!important
-}
-#resume-null.is-placeholder .resume-section .bullet-dot, #resume-null.is-placeholder .resume-section .editable-field, #resume-null.is-placeholder .resume-section .editable-field:-ms-input-placeholder, #resume-null.is-placeholder .resume-section .editable-field::-ms-input-placeholder, #resume-null.is-placeholder .resume-section .education-item-gpa .separator, #resume-null.is-placeholder .resume-section .resume-item-icon i, #resume-null.is-placeholder .resume-section .with-icon i, #resume-null.is-placeholder .resume-section .with-icon span {
-	color: transparent!important
-}
-#resume-null.is-placeholder .resume-section .bullet-dot, #resume-null.is-placeholder .resume-section .editable-field, #resume-null.is-placeholder .resume-section .editable-field::placeholder, #resume-null.is-placeholder .resume-section .education-item-gpa .separator, #resume-null.is-placeholder .resume-section .resume-item-icon i, #resume-null.is-placeholder .resume-section .with-icon i, #resume-null.is-placeholder .resume-section .with-icon span {
-	color: transparent!important
-}
-#resume-null.is-placeholder .resume-header .editable-field.name::-webkit-input-placeholder, #resume-null.is-placeholder .resume-header .editable-field.title::-webkit-input-placeholder {
-	opacity: .2!important
-}
-#resume-null.is-placeholder .resume-header .editable-field.name:-ms-input-placeholder, #resume-null.is-placeholder .resume-header .editable-field.name::-ms-input-placeholder, #resume-null.is-placeholder .resume-header .editable-field.title:-ms-input-placeholder, #resume-null.is-placeholder .resume-header .editable-field.title::-ms-input-placeholder {
-	opacity: .2!important
-}
-#resume-null.is-placeholder .resume-header .editable-field.name::placeholder, #resume-null.is-placeholder .resume-header .editable-field.title::placeholder {
-	opacity: .2!important
-}
-#resume-null.is-placeholder .photo-container .photo {
-	background: #f3f3f3!important
-}
-#resume-null.is-placeholder .resume-header-items {
-	pointer-events: none
-}
-#resume-null.is-placeholder .resume-header-items .editable-field, #resume-null.is-placeholder .resume-header-items i {
-	color: transparent!important
-}
-#resume-null.is-placeholder .resume-section {
-	pointer-events: none
-}
-#resume-null.is-placeholder .resume-section .resume-section-text {
-	border-color: #f3f3f3!important
-}
-#resume-null.is-placeholder .resume-section .editable-field, #resume-null.is-placeholder .resume-section .resume-item-icon, #resume-null.is-placeholder .resume-section .with-icon-container i {
-	position: relative
-}
-#resume-null.is-placeholder .resume-section .editable-field:after, #resume-null.is-placeholder .resume-section .resume-item-icon:after, #resume-null.is-placeholder .resume-section .with-icon-container i:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #f3f3f3
-}
-#resume-null.is-placeholder .item-object .editable-field:after {
-	height: 13px
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .resume-section-text:after {
-	height: 22px;
-	width: 175px
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .inner .editable-field-wrapper:nth-child(1) .editable-field:after {
-	width: 32%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .inner .editable-field-wrapper:nth-child(2) .editable-field:after {
-	width: 29%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .inner .media .media-body .editable-field:after {
-	width: 79%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .inner .with-icon-container i {
-	width: 63px
-}
-#resume-null.is-placeholder .resume-renderer-two-column:first-child .inner .editable-field-xs:after {
-	display: none
-}
-#resume-null.is-placeholder .resume-renderer-two-column:nth-child(2) .resume-section-text:after {
-	height: 22px;
-	width: 75%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:nth-child(2) .inner>div:first-child .editable-field:after {
-	width: 85%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:nth-child(2) .inner>div:nth-child(2) .editable-field:after {
-	width: 70%
-}
-#resume-null.is-placeholder .resume-renderer-two-column:nth-child(2) .resume-item-icon:after {
-	top: 2px
-}
-.quote-item .quote-item-quote {
-	font-size: 18px;
-	font-style: italic
-}
-.quote-item .editable-field-wrapper {
-	width: 100%
-}
-.quote-item .quote-item-author {
-	color: #384347;
-	font-size: 13px;
-	position: relative;
-	margin-top: 5px;
-	text-align: right
-}
-.resume-layout-newcondensed .quote-item-quote {
-	font-weight: 400;
-	font-size: 15px
-}
-.resume-layout-newcondensed .quote-item-author {
-	font-size: 12px;
-	margin-top: 0
-}
 
-/* ПРОВЕРЕНО 5979 2508 1750*/
+/* ПРОВЕРЕНО 5979 2508 1750 1005*/
 
-/* .achievement-item>.inner {
-	padding-bottom: 7.5px!important
-} */
 .achievement-item .achievement-item-icon {
 	width: 30px;
 	text-align: center;
